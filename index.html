@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>A GIFT FOR MOMMY ❤️</title>
+<style>
+:root {
+  --pink: #ff477e;
+  --deep: #b8174b;
+  --soft: #fff0f5;
+  --ink: #65253f;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(145deg,#fff5f8,#ffe1ec,#fff0f5);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+button { font: inherit; }
+.hearts {
+  position: fixed; inset: 0;
+  pointer-events: none; overflow: hidden; z-index: 0;
+}
+.heart {
+  position: absolute; bottom: -45px;
+  color: #f45b88; opacity: 0;
+  animation: floatUp linear forwards;
+}
+@keyframes floatUp {
+  10% { opacity: .55; }
+  100% { transform: translateY(-115vh) rotate(35deg); opacity: 0; }
+}
+main {
+  position: relative; z-index: 1;
+  width: min(92%, 680px);
+  margin: auto; padding: 34px 0 48px;
+}
+.top {
+  text-align: center; padding: 12px 0 22px;
+}
+.eyebrow {
+  text-transform: uppercase; letter-spacing: 4px;
+  font: 11px Arial, sans-serif; color: #bd5377;
+}
+h1 {
+  font-size: clamp(34px, 8vw, 58px);
+  line-height: 1.05; margin: 16px 0 10px;
+  color: var(--deep); font-weight: normal;
+}
+.subtitle { font-size: 16px; font-style: italic; color: #a94d70; }
+.big-heart {
+  font-size: 52px; display: inline-block;
+  animation: heartbeat 1.8s infinite;
+  filter: drop-shadow(0 6px 10px #e85b8240);
+}
+@keyframes heartbeat {
+  0%,100% { transform: scale(1); }
+  12% { transform: scale(1.13); }
+  24% { transform: scale(1); }
+  36% { transform: scale(1.08); }
+}
+.card {
+  background: #ffffffc9;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  padding: clamp(22px, 6vw, 42px);
+  box-shadow: 0 18px 55px #ad31531b;
+  backdrop-filter: blur(10px);
+}
+.card-top { text-align: center; margin-bottom: 28px; }
+.card-top .mini { color: var(--pink); font-size: 22px; }
+.card-top h2 {
+  font-size: 27px; font-weight: normal; margin: 10px 0 5px;
+}
+.card-top p { font: 12px Arial,sans-serif; color: #a96b82; letter-spacing: 1px; }
+.letter {
+  font-size: 17px; line-height: 1.95;
+  overflow-wrap: anywhere;
+}
+.letter p { margin: 0 0 18px; }
+.signature {
+  margin-top: 28px; padding-top: 22px;
+  border-top: 1px solid #f5cfdd;
+  text-align: right; font-style: italic; line-height: 1.9;
+}
+.signature strong {
+  display: block; font-size: 25px; color: var(--deep);
+  font-weight: normal;
+}
+.quote {
+  margin: 24px 0 0; text-align: center;
+  color: #bd416c; font-size: 18px; font-style: italic;
+  line-height: 1.7;
+}
+.controls {
+  display: flex; justify-content: center;
+  flex-wrap: wrap; gap: 10px; margin: 24px 0;
+}
+.btn {
+  border: 0; border-radius: 50px;
+  padding: 13px 20px; cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+.btn:hover { transform: translateY(-2px); }
+.primary {
+  color: white; background: linear-gradient(120deg,#ff6695,#d52b60);
+  box-shadow: 0 8px 20px #d52b6030;
+}
+.secondary { color: var(--deep); background: #ffffffc9; border: 1px solid #f3c5d6; }
+.hidden-note {
+  display: none; margin-top: 18px;
+  padding: 22px; border-radius: 18px;
+  background: #fff5f8; border: 1px dashed #ed9db8;
+  text-align: center; line-height: 1.8;
+  animation: appear .5s ease;
+}
+.hidden-note.show { display: block; }
+@keyframes appear {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+footer {
+  text-align: center; padding: 28px 5px 0;
+  color: #b36b84; font: 11px Arial,sans-serif;
+  letter-spacing: 1px; line-height: 2;
+}
+footer span { color: #e44e7b; }
+@media(max-width:420px) {
+  main { width: 91%; padding-top: 22px; }
+  .letter { font-size: 16px; }
+  .card { border-radius: 20px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+
+<main>
+  <header class="top">
+    <div class="eyebrow">A little piece of my heart</div>
+    <div class="big-heart" aria-hidden="true">♥</div>
+    <h1>A GIFT FOR<br>MOMMY</h1>
+    <div class="subtitle">Made with love, just for you.</div>
+  </header>
+
+  <article class="card">
+    <div class="card-top">
+      <div class="mini">✧ ♡ ✧</div>
+      <h2>To my favourite person</h2>
+      <p>READ THIS WITH YOUR HEART</p>
+    </div>
+
+    <div class="letter" id="letter">
+      <!-- EDIT YOUR LETTER BELOW -->
+      <p>Hey, mommy. ❤️</p>
+
+      <p>
+        If I could give you one thing in this world,
+        it would be the ability to see yourself through
+        my eyes. Maybe then you'd understand just how
+        special you are to me.
+      </p>
+
+      <p>
+        You have this little way of making ordinary
+        moments feel special. Even from miles away,
+        you can make me smile at my phone like the
+        silliest person alive. And honestly? I wouldn't
+        trade that feeling for anything.
+      </p>
+
+      <p>
+        I don't need every moment with you to be perfect.
+        I just want the little things — our random
+        conversations, our stupid jokes, the moments
+        when neither of us knows what to say, and the
+        comfort of knowing we're there for each other.
+      </p>
+
+      <p>
+        I hope life gives you a thousand reasons to smile.
+        I hope you always remember how much you matter,
+        how worthy you are of kindness, and how many
+        beautiful things are still waiting for you.
+      </p>
+
+      <p>
+        No website could ever fit everything I feel
+        into a few paragraphs. But I made this little
+        corner of the internet for you, so you could
+        have something to open and remember:
+        someone out here is genuinely happy that
+        you're part of his world. 💗
+      </p>
+
+      <p>Happy birthday, my favourite human. 🎂</p>
+      <!-- END OF EDITABLE LETTER -->
+
+      <div class="signature">
+        With all my heart,
+        <strong>Your boy ♥</strong>
+        <span>قلبي اختارك</span>
+      </div>
+    </div>
+
+    <div class="quote">
+      “Two hands, one heart, countless feelings.”
+    </div>
+  </article>
+
+  <div class="controls">
+    <button class="btn primary" id="surpriseBtn">
+      One more little thing ♡
+    </button>
+    <button class="btn secondary" id="musicBtn">
+      ♫ Play our song
+    </button>
+  </div>
+
+  <div class="hidden-note" id="hiddenNote">
+    <div style="font-size:30px">💌</div>
+    <p>
+      Out of all the people in this huge world,
+      I'm so glad our paths crossed.
+    </p>
+    <p>
+      Wherever life takes us, I hope we keep finding
+      reasons to laugh, to grow, and to make beautiful
+      memories together.
+    </p>
+    <strong style="color:#b8174b;font-size:20px">
+      You're a very special part of my story. ♥
+    </strong>
+  </div>
+
+  <footer>
+    MADE WITH <span>♥</span> AND A LITTLE BIT OF MADNESS<br>
+    JUST FOR YOU · ALWAYS A LITTLE MORE LOVE
+  </footer>
+</main>
+
+<script>
+const heartBox = document.getElementById("hearts");
+
+function makeHeart() {
+  if (document.hidden) return;
+  const heart = document.createElement("span");
+  heart.className = "heart";
+  heart.textContent = Math.random() > .5 ? "♥" : "♡";
+  heart.style.left = Math.random() * 100 + "%";
+  heart.style.fontSize = (12 + Math.random() * 22) + "px";
+  const duration = 7 + Math.random() * 7;
+  heart.style.animationDuration = duration + "s";
+  heartBox.appendChild(heart);
+  setTimeout(() => heart.remove(), duration * 1000);
+}
+
+for (let i = 0; i < 12; i++) {
+  setTimeout(makeHeart, i * 300);
+}
+setInterval(makeHeart, 850);
+
+const surpriseBtn = document.getElementById("surpriseBtn");
+const hiddenNote = document.getElementById("hiddenNote");
+
+surpriseBtn.addEventListener("click", () => {
+  const isOpen = hiddenNote.classList.toggle("show");
+  surpriseBtn.textContent = isOpen
+    ? "Close my little note ♡"
+    : "One more little thing ♡";
+  if (isOpen) {
+    hiddenNote.scrollIntoView({ behavior: "smooth", block: "center" });
+    for (let i = 0; i < 15; i++) {
+      setTimeout(makeHeart, i * 90);
+    }
+  }
+});
+
+// Optional audio: add a file named song.mp3 to the
+// same GitHub repository to enable the music button.
+const musicBtn = document.getElementById("musicBtn");
+const song = new Audio("./song.mp3");
+song.loop = true;
+song.preload = "none";
+
+let musicReady = false;
+
+musicBtn.addEventListener("click", async () => {
+  if (song.paused) {
+    try {
+      await song.play();
+      musicReady = true;
+      musicBtn.textContent = "Ⅱ Pause our song";
+    } catch (error) {
+      musicBtn.textContent = "Add song.mp3 first ♡";
+    }
+  } else {
+    song.pause();
+    musicBtn.textContent = "♫ Play our song";
+  }
+});
+</script>
+</body>
+</html>
